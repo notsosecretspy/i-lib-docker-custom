@@ -5,6 +5,7 @@ ENV ILIBRARIAN_VERSION=4.8_all_xenial \
     ILIBRARIAN_LIBRARY_PATH=/data
 
 VOLUME ${ILIBRARIAN_LIBRARY_PATH}
+VOLUME /usr/share/i-librarian/www
 EXPOSE 80
 
 RUN apt-get -qy update && \
