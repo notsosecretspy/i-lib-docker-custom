@@ -33,6 +33,7 @@ ENV APACHE_LOCK_DIR=/var/lock/apache2 \
     APACHE_RUN_GROUP=www-data
 
 COPY scripts/ /usr/local/bin/
+COPY i-librarian/ /usr/share/i-librarian/www
 
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["i-librarian"]
